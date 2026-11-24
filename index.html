@@ -10,10 +10,14 @@
 <link rel="apple-touch-icon" href="icon-180.png">
 <link rel="icon" type="image/png" href="icon-192.png">
 <link rel="manifest" href="manifest.webmanifest">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <script>
-// ホーム画面のアイコンから開いたとき（?go=1）は、すぐ案件登録アプリへ
+// ホーム画面のアイコンから開いたとき（全画面のアプリとして開く）だけ、すぐ案件登録アプリへ
 var APP='https://script.google.com/a/macros/g-den.tech/s/AKfycbyy0qQtPYBkLRwX75TwK-8DwOujxvAKniR3LI5rO85mn7yey54H_JfatvaFaSzBXIU8/exec';
-if(location.search.indexOf('go=1')>=0){location.replace(APP)}
+var SA=(window.navigator.standalone===true)||(window.matchMedia&&matchMedia('(display-mode: standalone)').matches);
+if(SA){location.replace(APP)}
 </script>
 <style>
 *{box-sizing:border-box}
@@ -62,8 +66,6 @@ b{color:#fff}
 </main>
 <script>
 document.getElementById('open').href=APP;
-// ホーム画面に追加したアイコンが「?go=1」で開くように、表示中のアドレスを書きかえておく
-try{history.replaceState(null,'',location.pathname+'?go=1')}catch(e){}
 </script>
 </body>
 </html>
