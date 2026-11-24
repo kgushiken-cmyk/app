@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>具志堅電設</title>
+<meta name="apple-mobile-web-app-title" content="具志堅(試)">
+<meta name="application-name" content="具志堅(試)">
+<meta name="theme-color" content="#0d3c8c">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="icon" type="image/png" href="icon-192.png">
+<link rel="manifest" href="full.webmanifest">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<style>
+html,body{margin:0;height:100%;background:#0d3c8c;color:#e8eaed;font-family:-apple-system,"Hiragino Sans",sans-serif}
+#app{position:fixed;left:0;right:0;bottom:0;top:env(safe-area-inset-top);width:100%;height:calc(100% - env(safe-area-inset-top));border:0;background:#17181b}
+#info{padding:24px 18px;line-height:1.7;background:#17181b;min-height:100%;box-sizing:border-box}
+#info h1{font-size:20px;margin:0 0 10px}
+#info b{color:#fff}.w{background:#3d2e10;color:#fdd663;border-radius:12px;padding:12px 14px;margin:12px 0}
+</style>
+</head>
+<body>
+<script>
+var APP='https://script.google.com/a/macros/g-den.tech/s/AKfycbyy0qQtPYBkLRwX75TwK-8DwOujxvAKniR3LI5rO85mn7yey54H_JfatvaFaSzBXIU8/exec';
+var SA=(window.navigator.standalone===true)||(window.matchMedia&&matchMedia('(display-mode: standalone)').matches)||location.hash==='#test';
+if(SA){document.write('<iframe id="app" src="'+APP+'" allow="clipboard-write; geolocation"></iframe>')}
+else{document.write('<div id="info"><h1>具志堅電設（試し用）</h1><div class="w">バーが出ない形を試すページです。<b>このページのまま</b>共有ボタン →「ホーム画面に追加」で入れてください。</div><p>ホーム画面にできた「具志堅(試)」を押すと、案件登録アプリが全画面で開きます。</p></div>')}
+</script>
+</body>
+</html>
