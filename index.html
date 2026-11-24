@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>具志堅電設</title>
+<meta name="apple-mobile-web-app-title" content="具志堅電設">
+<meta name="application-name" content="具志堅電設">
+<meta name="theme-color" content="#0d3c8c">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="icon" type="image/png" href="icon-192.png">
+<link rel="manifest" href="manifest.webmanifest">
+<script>
+// ホーム画面のアイコンから開いたとき（?go=1）は、すぐ案件登録アプリへ
+var APP='https://script.google.com/a/macros/g-den.tech/s/AKfycbyy0qQtPYBkLRwX75TwK-8DwOujxvAKniR3LI5rO85mn7yey54H_JfatvaFaSzBXIU8/exec';
+if(location.search.indexOf('go=1')>=0){location.replace(APP)}
+</script>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#17181b;color:#e8eaed;font-family:-apple-system,"Hiragino Sans","Noto Sans JP",sans-serif;line-height:1.6}
+header{background:#0d3c8c;padding:14px 16px;font-weight:700;font-size:18px}
+main{padding:20px 16px 40px;max-width:520px;margin:0 auto}
+.logo{display:block;width:96px;height:96px;border-radius:22px;margin:4px auto 10px}
+h1{font-size:22px;text-align:center;margin:0 0 4px}
+.sub{text-align:center;color:#9aa0a6;font-size:14px;margin:0 0 20px}
+.btn{display:block;text-align:center;background:#1a73e8;color:#fff;text-decoration:none;font-weight:700;font-size:17px;border-radius:12px;padding:14px;margin:0 0 24px}
+.card{background:#26272b;border-radius:14px;padding:14px 16px;margin-bottom:12px}
+.card h2{font-size:16px;margin:0 0 8px;color:#8ab4f8}
+ol{margin:0;padding-left:22px}
+li{margin:4px 0}
+b{color:#fff}
+.note{color:#9aa0a6;font-size:13px}
+</style>
+</head>
+<body>
+<header>案件登録アプリ</header>
+<main>
+<img class="logo" src="icon-180.png" alt="">
+<h1>具志堅電設</h1>
+<p class="sub">案件登録アプリ。ホーム画面に入れると会社のマークになります</p>
+<a class="btn" href="#" id="open">アプリを開く</a>
+
+<div class="card">
+<h2>iPhone（Safari）</h2>
+<ol>
+<li>このページを <b>Safari</b> で開く</li>
+<li>下の <b>共有ボタン</b>（□に↑）を押す</li>
+<li><b>「ホーム画面に追加」</b> → 右上の <b>「追加」</b></li>
+</ol>
+</div>
+
+<div class="card">
+<h2>Android（Chrome）</h2>
+<ol>
+<li>このページを <b>Chrome</b> で開く</li>
+<li>右上の <b>︙</b> を押す</li>
+<li><b>「ホーム画面に追加」</b> → <b>「追加」</b></li>
+</ol>
+</div>
+
+<p class="note">開くと会社のGoogleアカウントでのログインを聞かれることがあります。会社のアドレスでログインしてください。</p>
+</main>
+<script>
+document.getElementById('open').href=APP;
+// ホーム画面に追加したアイコンが「?go=1」で開くように、表示中のアドレスを書きかえておく
+try{history.replaceState(null,'',location.pathname+'?go=1')}catch(e){}
+</script>
+</body>
+</html>
