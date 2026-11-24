@@ -34,6 +34,9 @@ ol{margin:0;padding-left:22px}
 li{margin:4px 0}
 b{color:#fff}
 .note{color:#9aa0a6;font-size:13px}
+.warn{background:#3d2e10;color:#fdd663;border-radius:12px;padding:12px 14px;margin:0 0 14px;font-size:14px}
+.warn b{color:#fff}
+.btn{margin-top:8px}
 </style>
 </head>
 <body>
@@ -42,7 +45,8 @@ b{color:#fff}
 <img class="logo" src="icon-180.png" alt="">
 <h1>具志堅電設</h1>
 <p class="sub">案件登録アプリ。ホーム画面に入れると会社のマークになります</p>
-<a class="btn" href="#" id="open">アプリを開く</a>
+
+<div class="warn">ホーム画面に入れるときは、<b>このページのまま</b>共有ボタンを押してください（「アプリを開く」を押してからだと、会社のマークになりません）</div>
 
 <div class="card">
 <h2>iPhone（Safari）</h2>
@@ -50,6 +54,14 @@ b{color:#fff}
 <li>このページを <b>Safari</b> で開く</li>
 <li>下の <b>共有ボタン</b>（□に↑）を押す</li>
 <li><b>「ホーム画面に追加」</b> → 右上の <b>「追加」</b></li>
+</ol>
+</div>
+
+<div class="card">
+<h2>iPhone（Chrome）</h2>
+<ol>
+<li>このページのまま、上のアドレスの右の <b>共有ボタン</b>（□に↑）を押す</li>
+<li><b>「ホーム画面に追加」</b>（なければ「表示を増やす」の中）→ <b>「追加」</b></li>
 </ol>
 </div>
 
@@ -62,6 +74,7 @@ b{color:#fff}
 </ol>
 </div>
 
+<a class="btn" href="#" id="open">アプリを開く（ホーム画面に入れたあとは不要）</a>
 <p class="note">開くと会社のGoogleアカウントでのログインを聞かれることがあります。会社のアドレスでログインしてください。</p>
 </main>
 <script>
