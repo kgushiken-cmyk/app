@@ -1,9 +1,9 @@
 {
   "name": "具志堅電設",
   "short_name": "具志堅電設",
-  "start_url": "./?go=1",
+  "start_url": "./",
   "scope": "./",
-  "display": "browser",
+  "display": "standalone",
   "background_color": "#0096e1",
   "theme_color": "#0096e1",
   "icons": [
